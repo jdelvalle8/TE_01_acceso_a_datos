@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class Ejer1 {
     public static void main(String[] args) {    	
-        // Usamos try-catch para manejar las excepciones
+        // Usamos try-with-resources para manejar las excepciones y el cierre de recursos
         try (FileReader reader = new FileReader("entrada.txt");
             FileWriter writer = new FileWriter("salida.txt")) {        	
             int dato;
